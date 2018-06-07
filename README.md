@@ -11,6 +11,7 @@ designs. The keyboard will be fully customizable through QMK, the software of wh
  - Have RGB underglow, maybe backlighting?
  - Try out different PCB and key layouts for something new and exciting
  - Utilize current Kailh Low Profile switches and keycaps 
+ - Add Bluetooth capablilities!
 
 # Software and Tools
 Schematic and PCB design was done in [KiCAD](http://kicad-pcb.org/). 
