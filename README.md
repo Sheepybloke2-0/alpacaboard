@@ -14,7 +14,7 @@ designs. The keyboard will be fully customizable through QMK, the software of wh
  - Add Bluetooth capablilities!
 
 # Software and Tools
-Schematic and PCB design was done in [KiCAD](http://kicad-pcb.org/). 
+Schematic and PCB design was done in [KiCAD](http://kicad-pcb.org/). Because I'm lazy, the routing was done by [Freerouting](https://github.com/freerouting/freerouting).
 
 # References
  - [ATmega32U4 Datasheet](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/ATMega32U4.pdf)
@@ -28,6 +28,20 @@ Schematic and PCB design was done in [KiCAD](http://kicad-pcb.org/).
  - [USB C connector pinouts](https://en.wikipedia.org/wiki/USB-C#Connector_pinouts)
  - [Guide to the key matrix](http://blog.komar.be/how-to-make-a-keyboard-the-matrix/)
     - Great and informative guide to keyboard design
+ - [Featherwing ATmega32u4 with BLE](https://www.adafruit.com/product/2829)
+ - [MCP23008 I2C GPIO Expander](https://www.adafruit.com/product/593)
+ - [Max keyboard key size chart](http://www.maxkeyboard.com/mechanical-keycap-layout-and-size-chart.html)
+ - [Bunch of keyboard parts](https://github.com/keebio/Keebio-Parts.pretty)
+ - [Featherwing KiCAD Model](https://forum.kicad.info/t/designing-featherwings-in-kicad/6115/2)
+    - Use the bottom one
+    
+# Version 0.2 
+After making the schematic and layout for V0.1, I decided to change the components to thru-hole and use a micro-controller for 
+easier soldering and assembly. The other reason is because of the Featherwing ATMega32u4 with BLE support. This has a handle
+LiPo charging circuit and BLE support for most devices, specifically mobile. For some computers a converter may be needed. 
+However, in order to make this work, I had to add a GPIO expander, since most of the pins on the Featherwing are needed for
+other functions, such as the Bluetooth and charging. The expander talks via I2C and is addressed at `000`. This expander also
+allows for the RGB underglow I wanted to include. Now, it's on to fabrication and software!
 
 # License
 I hope that by keeping this project Open Source, other designers can use my work as a base to get up and running quickly. Feel free to use my 
