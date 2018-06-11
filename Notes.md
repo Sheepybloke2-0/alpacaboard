@@ -10,3 +10,10 @@
 6. Filter the Vcc with a couple of caps. Doesn't need to be huge, but it's 5c for two 10uF caps, so worth it for the extra filtering.
 7. For the shield, assume the GND is the same as referance.
 8. [See this page](https://github.com/keyboardio/keyswitch_documentation/blob/master/datasheets/Kailh/PG135001D02.pdf) for the switch footprint.
+9. Think foot print of PCB is 70mmx250mm
+10. 330mmX98mm
+11. Mount0 = 58.42mm X 168.4mm
+12. Mount1 = 20.32mm X 28.7mm
+13. Mount2 = 22.61mm X 39.88mm
+14. Mount3 = 4.1mm X 47mm
+15. Mount4 = 19.1mm X 22.35mm
